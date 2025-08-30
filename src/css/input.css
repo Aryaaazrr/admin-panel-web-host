@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: oklch(58.8% 0.158 241.966);
+  --color-secondary: oklch(74.6% 0.16 232.661);
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}

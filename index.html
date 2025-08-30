@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel Admin - MyHosting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="./src/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-50 w-64 bg-red-800 shadow-lg transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out rounded-r-full" aria-label="Sidenav">
+      <div class="overflow-y-auto py-5 px-3 h-full bg-white border-r border-gray-200 dark:bg-neutral-900 dark:border-gray-800 rounded-r-4xl">
+        <!-- <div class="flex my-5">
+          <h1 class="font-bold text-center ml-2 text-2xl text-blue-900">ADMIN PANEL</h1>
+        </div> -->
+        <div class="flex">
+          <img src="./src//img/logo_cloudpedia.png" alt="logo" class="w-52" />
+        </div>
+        <ul class="space-y-2">
+          <li>
+            <a href="#" class="flex items-center p-2 text-base font-normal bg-sky-50 text-sky-600 rounded-lg dark:text-white hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                width="24"
+                height="24"
+                class="text-sky-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M22 9.999V20C22 20.5523 21.5523 21 21 21H13V9.999H22ZM11 15.999V21H3C2.44772 21 2 20.5523 2 20V15.999H11ZM11 3V13.999H2V4C2 3.44772 2.44772 3 3 3H11ZM21 3C21.5523 3 22 3.44772 22 4V7.999H13V3H21Z"></path>
+              </svg>
+              <span class="ml-3">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-600 rounded-lg dark:text-white hover:text-sky-600 hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 10C14.2091 10 16 8.20914 16 6 16 3.79086 14.2091 2 12 2 9.79086 2 8 3.79086 8 6 8 8.20914 9.79086 10 12 10ZM5.5 13C6.88071 13 8 11.8807 8 10.5 8 9.11929 6.88071 8 5.5 8 4.11929 8 3 9.11929 3 10.5 3 11.8807 4.11929 13 5.5 13ZM21 10.5C21 11.8807 19.8807 13 18.5 13 17.1193 13 16 11.8807 16 10.5 16 9.11929 17.1193 8 18.5 8 19.8807 8 21 9.11929 21 10.5ZM12 11C14.7614 11 17 13.2386 17 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5 15.9999C5 15.307 5.10067 14.6376 5.28818 14.0056L5.11864 14.0204C3.36503 14.2104 2 15.6958 2 17.4999V21.9999H5V15.9999ZM22 21.9999V17.4999C22 15.6378 20.5459 14.1153 18.7118 14.0056 18.8993 14.6376 19 15.307 19 15.9999V21.9999H22Z"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-600 rounded-lg dark:text-white hover:text-sky-600 hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M4 3H20C20.5523 3 21 3.44772 21 4V11H3V4C3 3.44772 3.44772 3 4 3ZM3 13H21V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V13ZM7 16V18H10V16H7ZM7 6V8H10V6H7Z"></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-600 rounded-lg dark:text-white hover:text-sky-600 hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M19 22H5C3.34315 22 2 20.6569 2 19V3C2 2.44772 2.44772 2 3 2H17C17.5523 2 18 2.44772 18 3V15H22V19C22 20.6569 20.6569 22 19 22ZM18 17V19C18 19.5523 18.4477 20 19 20C19.5523 20 20 19.5523 20 19V17H18ZM6 7V9H14V7H6ZM6 11V13H14V11H6ZM6 15V17H11V15H6Z"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Billing</span>
+              <span class="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-orange-900 bg-amber-200 dark:bg-primary-200 dark:text-primary-800"> 6 </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-600 rounded-lg dark:text-white hover:text-sky-600 hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M7.29117 20.8242L2 22L3.17581 16.7088C2.42544 15.3056 2 13.7025 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C10.2975 22 8.6944 21.5746 7.29117 20.8242Z"></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Support</span>
+              <span class="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-orange-900 bg-amber-200 dark:bg-primary-200 dark:text-primary-800"> 6 </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-600 rounded-lg dark:text-white hover:text-sky-600 hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20 5C20 6.65685 18.6569 8 17 8C15.3431 8 14 6.65685 14 5C14 3.34315 15.3431 2 17 2C18.6569 2 20 3.34315 20 5ZM7 3C4.79086 3 3 4.79086 3 7V9H5V7C5 5.89543 5.89543 5 7 5H10V3H7ZM17 21C19.2091 21 21 19.2091 21 17V15H19V17C19 18.1046 18.1046 19 17 19H14V21H17ZM7 16C8.65685 16 10 14.6569 10 13C10 11.3431 8.65685 10 7 10C5.34315 10 4 11.3431 4 13C4 14.6569 5.34315 16 7 16ZM17 9C14.7909 9 13 10.7909 13 13H21C21 10.7909 19.2091 9 17 9ZM3 21C3 18.7909 4.79086 17 7 17C9.20914 17 11 18.7909 11 21H3Z"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Affiliates</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
+          <li>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-600 rounded-lg dark:text-white hover:text-sky-600 hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M9.95401 2.2106C11.2876 1.93144 12.6807 1.92263 14.0449 2.20785C14.2219 3.3674 14.9048 4.43892 15.9997 5.07103C17.0945 5.70313 18.364 5.75884 19.4566 5.3323C20.3858 6.37118 21.0747 7.58203 21.4997 8.87652C20.5852 9.60958 19.9997 10.736 19.9997 11.9992C19.9997 13.2632 20.5859 14.3902 21.5013 15.1232C21.29 15.7636 21.0104 16.3922 20.6599 16.9992C20.3094 17.6063 19.9049 18.1627 19.4559 18.6659C18.3634 18.2396 17.0943 18.2955 15.9997 18.9274C14.9057 19.559 14.223 20.6294 14.0453 21.7879C12.7118 22.067 11.3187 22.0758 9.95443 21.7906C9.77748 20.6311 9.09451 19.5595 7.99967 18.9274C6.90484 18.2953 5.63539 18.2396 4.54272 18.6662C3.61357 17.6273 2.92466 16.4164 2.49964 15.1219C3.41412 14.3889 3.99968 13.2624 3.99968 11.9992C3.99968 10.7353 3.41344 9.60827 2.49805 8.87524C2.70933 8.23482 2.98894 7.60629 3.33942 6.99923C3.68991 6.39217 4.09443 5.83576 4.54341 5.33257C5.63593 5.75881 6.90507 5.703 7.99967 5.07103C9.09364 4.43942 9.7764 3.3691 9.95401 2.2106ZM11.9997 14.9992C13.6565 14.9992 14.9997 13.6561 14.9997 11.9992C14.9997 10.3424 13.6565 8.99923 11.9997 8.99923C10.3428 8.99923 8.99967 10.3424 8.99967 11.9992C8.99967 13.6561 10.3428 14.9992 11.9997 14.9992Z"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center p-2 text-base font-normal text-gray-600 rounded-lg dark:text-white hover:text-sky-600 hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13 21V23.5L10 21.5L7 23.5V21H6.5C4.567 21 3 19.433 3 17.5V5C3 3.34315 4.34315 2 6 2H20C20.5523 2 21 2.44772 21 3V20C21 20.5523 20.5523 21 20 21H13ZM7 19V17H13V19H19V16H6.5C5.67157 16 5 16.6716 5 17.5C5 18.3284 5.67157 19 6.5 19H7ZM7 5V7H9V5H7ZM7 8V10H9V8H7ZM7 11V13H9V11H7Z"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Repository</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.cloudpedia.id/" target="_blank" class="flex items-center p-2 text-base font-normal text-gray-600 rounded-lg dark:text-white hover:text-sky-600 hover:bg-sky-100 dark:hover:bg-gray-700 group">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M2.04932 12.9999H7.52725C7.70624 16.2688 8.7574 19.3053 10.452 21.8809C5.98761 21.1871 2.5001 17.5402 2.04932 12.9999ZM2.04932 10.9999C2.5001 6.45968 5.98761 2.81276 10.452 2.11902C8.7574 4.69456 7.70624 7.73111 7.52725 10.9999H2.04932ZM21.9506 10.9999H16.4726C16.2936 7.73111 15.2425 4.69456 13.5479 2.11902C18.0123 2.81276 21.4998 6.45968 21.9506 10.9999ZM21.9506 12.9999C21.4998 17.5402 18.0123 21.1871 13.5479 21.8809C15.2425 19.3053 16.2936 16.2688 16.4726 12.9999H21.9506ZM9.53068 12.9999H14.4692C14.2976 15.7828 13.4146 18.3732 11.9999 20.5915C10.5852 18.3732 9.70229 15.7828 9.53068 12.9999ZM9.53068 10.9999C9.70229 8.21709 10.5852 5.62672 11.9999 3.40841C13.4146 5.62672 14.2976 8.21709 14.4692 10.9999H9.53068Z"
+                ></path>
+              </svg>
+              <span class="flex-1 ml-3 whitespace-nowrap">Get Started</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </body>
+</html>
