@@ -35,10 +35,10 @@ themeToggleBtn.addEventListener("click", function () {
 
 const options = {
   chart: {
-    height: "100%",
+    height: "270px",
     maxWidth: "100%",
     type: "area",
-    fontFamily: "Inter, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     dropShadow: {
       enabled: false,
     },
@@ -105,6 +105,109 @@ if (document.getElementById("area-chart") && typeof ApexCharts !== "undefined") 
   chart.render();
 }
 
+const getChartOptions = () => {
+  return {
+    series: [20000000, 17000000, 10000000],
+    colors: ["#1C64F2", "#16BDCA", "#FDBA8C"],
+    chart: {
+      height: "360px",
+      maxWidth: "100%",
+      type: "donut",
+    },
+    stroke: {
+      colors: ["transparent"],
+      lineCap: "",
+    },
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: true,
+            name: {
+              show: true,
+              fontFamily: "Poppins, sans-serif",
+              offsetY: 20,
+            },
+            total: {
+              showAlways: true,
+              show: true,
+              label: "Total Transaction",
+              fontFamily: "Poppins, sans-serif",
+              formatter: function (w) {
+                const sum = w.globals.seriesTotals.reduce((a, b) => a + b, 0);
+                return sum.toLocaleString("id-ID", {
+                  style: "currency",
+                  currency: "IDR",
+                  minimumFractionDigits: 0,
+                });
+              },
+            },
+            value: {
+              show: true,
+              fontFamily: "Poppins, sans-serif",
+              offsetY: -20,
+              formatter: function (value) {
+                return value.toLocaleString("id-ID", {
+                  style: "currency",
+                  currency: "IDR",
+                  minimumFractionDigits: 0,
+                });
+              },
+            },
+          },
+          size: "80%",
+        },
+      },
+    },
+    grid: {
+      padding: {
+        top: -2,
+      },
+    },
+    labels: ["Cloud Hosting", "Domain", "VPS Hosting"],
+    dataLabels: {
+      enabled: false,
+    },
+    legend: {
+      position: "bottom",
+      fontFamily: "Poppins, sans-serif",
+    },
+    yaxis: {
+      labels: {
+        formatter: function (value) {
+          return value.toLocaleString("id-ID", {
+            style: "currency",
+            currency: "IDR",
+            minimumFractionDigits: 0,
+          });
+        },
+      },
+    },
+    xaxis: {
+      labels: {
+        formatter: function (value) {
+          return value.toLocaleString("id-ID", {
+            style: "currency",
+            currency: "IDR",
+            minimumFractionDigits: 0,
+          });
+        },
+      },
+      axisTicks: {
+        show: false,
+      },
+      axisBorder: {
+        show: false,
+      },
+    },
+  };
+};
+
+if (document.getElementById("donut-chart") && typeof ApexCharts !== "undefined") {
+  const chart = new ApexCharts(document.getElementById("donut-chart"), getChartOptions());
+  chart.render();
+}
+
 // humberger
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
@@ -124,3 +227,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+if (document.getElementById("default-table") && typeof simpleDatatables.DataTable !== "undefined") {
+  const dataTable = new simpleDatatables.DataTable("#default-table", {
+    searchable: true,
+    perPage: 5,
+    perPageSelect: false,
+    fixedHeight: true,
+  });
+}

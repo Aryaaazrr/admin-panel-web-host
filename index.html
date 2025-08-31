@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link href="./src/css/output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.46.0/dist/apexcharts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
     <script>
       if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
         document.documentElement.classList.add("dark");
@@ -27,8 +29,13 @@
         <ul class="space-y-2">
           <li>
             <a href="#" class="flex items-center p-2 text-base font-normal bg-sky-50 text-sky-600 rounded-lg dark:text-white hover:bg-sky-100 dark:hover:bg-gray-700 group">
-              <svg aria-hidden="true"
-                class="flex-shrink-0 w-6 h-6 text-sky-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <svg
+                aria-hidden="true"
+                class="flex-shrink-0 w-6 h-6 text-sky-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
                 <path
                   d="M3 12C3 12.5523 3.44772 13 4 13H10C10.5523 13 11 12.5523 11 12V4C11 3.44772 10.5523 3 10 3H4C3.44772 3 3 3.44772 3 4V12ZM3 20C3 20.5523 3.44772 21 4 21H10C10.5523 21 11 20.5523 11 20V16C11 15.4477 10.5523 15 10 15H4C3.44772 15 3 15.4477 3 16V20ZM13 20C13 20.5523 13.4477 21 14 21H20C20.5523 21 21 20.5523 21 20V12C21 11.4477 20.5523 11 20 11H14C13.4477 11 13 11.4477 13 12V20ZM14 3C13.4477 3 13 3.44772 13 4V8C13 8.55228 13.4477 9 14 9H20C20.5523 9 21 8.55228 21 8V4C21 3.44772 20.5523 3 20 3H14Z"
                 ></path>
@@ -253,7 +260,7 @@
               </div>
               <div class="ml-4">
                 <p class="text-sm font-medium text-gray-600">Total Users</p>
-                <p class="text-2xl font-semibold text-gray-900">1,247</p>
+                <p class="text-2xl font-semibold text-gray-900">10,247</p>
               </div>
             </div>
           </div>
@@ -266,8 +273,8 @@
                 </svg>
               </div>
               <div class="ml-4">
-                <p class="text-sm font-medium text-gray-600">Active Services</p>
-                <p class="text-2xl font-semibold text-gray-900">856</p>
+                <p class="text-sm font-medium text-gray-600">Services</p>
+                <p class="text-2xl font-semibold text-gray-900">3</p>
               </div>
             </div>
           </div>
@@ -285,7 +292,7 @@
               </div>
               <div class="ml-4">
                 <p class="text-sm font-medium text-gray-600">Server Status</p>
-                <p class="text-2xl font-semibold text-green-600">Online</p>
+                <p class="text-2xl font-semibold text-green-600">Actived</p>
               </div>
             </div>
           </div>
@@ -306,18 +313,18 @@
               </div>
               <div class="ml-4">
                 <p class="text-sm font-medium text-gray-600">Monthly Revenue</p>
-                <p class="text-2xl font-semibold text-gray-900">$12,847</p>
+                <p class="text-2xl font-semibold text-gray-900">Rp 830.434.433</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-          <!-- Chart -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 max-h-fit gap-6">
+          <!-- Users Chart -->
           <div class="lg:col-span-2 bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6">
             <div class="flex justify-between">
               <div>
-                <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white pb-2">32.4k</h5>
+                <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white pb-2">30.221</h5>
                 <p class="text-base font-normal text-gray-500 dark:text-gray-400">Users this week</p>
               </div>
               <div class="flex items-center px-2.5 py-0.5 text-base font-semibold text-green-500 dark:text-green-500 text-center">
@@ -364,10 +371,10 @@
                   </ul>
                 </div>
                 <a
-                  href="#"
+                  href="users.html"
                   class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 dark:hover:text-blue-500 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2"
                 >
-                  Users Report
+                  Users All
                   <svg class="w-2.5 h-2.5 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
                   </svg>
@@ -375,61 +382,321 @@
               </div>
             </div>
           </div>
-          <div class="lg:col-span-1 bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6">
-            <div class="flex flex-col">
-              <span class="text-lg font-semibold mb-2 pl-2 text-gray-900 dark:text-white">Transaction</span>
-              <span class="text-xs pl-2">Today</span>
-              <ol class="divide-y divide-gray-200 dark:divide-gray-700">
+          <!-- Transaction Card -->
+          <div class="lg:col-span-1 bg-white max-h-[470px] rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6 flex flex-col">
+            <div class="flex-shrink-0 mb-4">
+              <div class="flex items-center justify-between">
+                <h5 class="lg:pl-1.5 text-xl font-bold leading-none text-gray-900 dark:text-white">History Transaction</h5>
+                <a href="billing.html" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"> View all </a>
+              </div>
+            </div>
+            <div class="flex-1 overflow-y-auto">
+              <div class="text-xs lg:pl-2 pb-2">Today</div>
+              <ol class="pb-2 divide-y divide-gray-200 dark:divide-gray-700">
                 <li>
-                  <a href="#" class="items-center p-2 grid grid-cols-6 hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="col-span-1 text-gray-600 dark:text-gray-400">
-                      <div class="text-sm font-normal">10:30 AM</div>
+                  <a href="#" class="items-center p-2 grid grid-cols-4 md:grid-cols-6 hover:bg-sky-100 dark:hover:bg-gray-700">
+                    <div class="col-span-1 md:col-span-1 md:col-start-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">09:15 AM</div>
                     </div>
-                    <div class="col-span-1 text-gray-600 dark:text-gray-400">
-                      <div class="text-sm font-normal">"I wanted to share a webinar zeroheight."</div>
+                    <div class="col-span-1 row-span-2 row-start-1 md:row-span-1 md:col-span-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal flex items-center md:justify-center">
+                        <span class="p-2 bg-sky-50 rounded-full">
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-6 h-6 text-sky-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                            <path d="M22 10a3 3 0 0 0-3-3h-2.207a5.502 5.502 0 0 0-10.702.5" />
+                          </svg>
+                        </span>
+                      </div>
                     </div>
-                    <div class="col-span-1 text-gray-600 dark:text-gray-400">
-                      <div class="text-sm font-normal">"I wanted to share a webinar zeroheight."</div>
+                    <div class="col-span-1 row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">#250830</div>
                     </div>
-                    <div class="col-span-2 text-gray-600 dark:text-gray-400">
-                      <div class="text-sm font-normal">"I wanted to share a webinar zeroheight."</div>
+                    <div class="col-span-2 row-span-2 md:row-span-1 md:col-span-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">Cloud hosting service payments</div>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <img class="w-12 h-12 mb-3 me-3 rounded-full sm:mb-0" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie Green image" />
-                    <div>
-                      <div class="text-base font-normal text-gray-600 dark:text-gray-400">
-                        <span class="font-medium text-gray-900 dark:text-white">Bonnie Green</span> react to <span class="font-medium text-gray-900 dark:text-white">Thomas Lean's</span> comment
+                  <a href="#" class="items-center p-2 grid grid-cols-4 md:grid-cols-6 hover:bg-sky-100 dark:hover:bg-gray-700">
+                    <div class="col-span-1 md:col-span-1 md:col-start-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">09:15 AM</div>
+                    </div>
+                    <div class="col-span-1 row-span-2 row-start-1 md:row-span-1 md:col-span-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal flex items-center md:justify-center">
+                        <span class="p-2 bg-emerald-50 rounded-full">
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-6 h-6 text-emerald-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M15.686 15A14.5 14.5 0 0 1 12 22a14.5 14.5 0 0 1 0-20 10 10 0 1 0 9.542 13" />
+                            <path d="M2 12h8.5" />
+                            <path d="M20 6V4a2 2 0 1 0-4 0v2" />
+                            <rect width="8" height="5" x="14" y="6" rx="1" />
+                          </svg>
+                        </span>
                       </div>
-                      <span class="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
-                        <svg class="w-2.5 h-2.5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="m2 13.587 3.055-3.055A4.913 4.913 0 0 1 5 10a5.006 5.006 0 0 1 5-5c.178.008.356.026.532.054l1.744-1.744A8.973 8.973 0 0 0 10 3C4.612 3 0 8.336 0 10a6.49 6.49 0 0 0 2 3.587Z" />
-                          <path
-                            d="m12.7 8.714 6.007-6.007a1 1 0 1 0-1.414-1.414L11.286 7.3a2.98 2.98 0 0 0-.588-.21l-.035-.01a2.981 2.981 0 0 0-3.584 3.583c0 .012.008.022.01.033.05.204.12.401.211.59l-6.007 6.007a1 1 0 1 0 1.414 1.414L8.714 12.7c.189.091.386.162.59.211.011 0 .021.007.033.01a2.981 2.981 0 0 0 3.584-3.584c0-.012-.008-.023-.011-.035a3.05 3.05 0 0 0-.21-.588Z"
-                          />
-                          <path d="M17.821 6.593 14.964 9.45a4.952 4.952 0 0 1-5.514 5.514L7.665 16.75c.767.165 1.55.25 2.335.251 6.453 0 10-5.258 10-7 0-1.166-1.637-2.874-2.179-3.407Z" />
-                        </svg>
-                        Private
-                      </span>
+                    </div>
+                    <div class="col-span-1 row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">#250830</div>
+                    </div>
+                    <div class="col-span-2 row-span-2 md:row-span-1 md:col-span-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">Domain service payments</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="items-center p-2 grid grid-cols-4 md:grid-cols-6 hover:bg-sky-100 dark:hover:bg-gray-700">
+                    <div class="col-span-1 md:col-span-1 md:col-start-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">09:15 AM</div>
+                    </div>
+                    <div class="col-span-1 row-span-2 row-start-1 md:row-span-1 md:col-span-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal flex items-center md:justify-center">
+                        <span class="p-2 bg-amber-50 rounded-full">
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-6 h-6 text-amber-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                            <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                            <line x1="6" x2="6.01" y1="6" y2="6" />
+                            <line x1="6" x2="6.01" y1="18" y2="18" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-span-1 row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">#250830</div>
+                    </div>
+                    <div class="col-span-2 row-span-2 md:row-span-1 md:col-span-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">VPS hosting service payments</div>
+                    </div>
+                  </a>
+                </li>
+              </ol>
+              <div class="text-xs pl-2 pb-2">Yesterday</div>
+              <ol class="pb-2 divide-y divide-gray-200 dark:divide-gray-700">
+                <li>
+                  <a href="#" class="items-center p-2 grid grid-cols-4 md:grid-cols-6 hover:bg-sky-100 dark:hover:bg-gray-700">
+                    <div class="col-span-1 md:col-span-1 md:col-start-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">09:15 AM</div>
+                    </div>
+                    <div class="col-span-1 row-span-2 row-start-1 md:row-span-1 md:col-span-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal flex items-center md:justify-center">
+                        <span class="p-2 bg-sky-50 rounded-full">
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-6 h-6 text-sky-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                            <path d="M22 10a3 3 0 0 0-3-3h-2.207a5.502 5.502 0 0 0-10.702.5" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-span-1 row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">#250830</div>
+                    </div>
+                    <div class="col-span-2 row-span-2 md:row-span-1 md:col-span-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">Cloud hosting service payments</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="items-center p-2 grid grid-cols-4 md:grid-cols-6 hover:bg-sky-100 dark:hover:bg-gray-700">
+                    <div class="col-span-1 md:col-span-1 md:col-start-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">09:15 AM</div>
+                    </div>
+                    <div class="col-span-1 row-span-2 row-start-1 md:row-span-1 md:col-span-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal flex items-center md:justify-center">
+                        <span class="p-2 bg-amber-50 rounded-full">
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-6 h-6 text-amber-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                            <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                            <line x1="6" x2="6.01" y1="6" y2="6" />
+                            <line x1="6" x2="6.01" y1="18" y2="18" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-span-1 row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">#250830</div>
+                    </div>
+                    <div class="col-span-2 row-span-2 md:row-span-1 md:col-span-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">VPS hosting service payments</div>
+                    </div>
+                  </a>
+                </li>
+              </ol>
+              <div class="text-xs pl-2 pb-2">31 Aug</div>
+              <ol class="pb-2 divide-y divide-gray-200 dark:divide-gray-700">
+                <li>
+                  <a href="#" class="items-center p-2 grid grid-cols-4 md:grid-cols-6 hover:bg-sky-100 dark:hover:bg-gray-700">
+                    <div class="col-span-1 md:col-span-1 md:col-start-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">09:15 AM</div>
+                    </div>
+                    <div class="col-span-1 row-span-2 row-start-1 md:row-span-1 md:col-span-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal flex items-center md:justify-center">
+                        <span class="p-2 bg-sky-50 rounded-full">
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-6 h-6 text-sky-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                            <path d="M22 10a3 3 0 0 0-3-3h-2.207a5.502 5.502 0 0 0-10.702.5" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-span-1 row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">#250830</div>
+                    </div>
+                    <div class="col-span-2 row-span-2 md:row-span-1 md:col-span-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">Cloud hosting service payments</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="items-center p-2 grid grid-cols-4 md:grid-cols-6 hover:bg-sky-100 dark:hover:bg-gray-700">
+                    <div class="col-span-1 md:col-span-1 md:col-start-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">09:15 AM</div>
+                    </div>
+                    <div class="col-span-1 row-span-2 row-start-1 md:row-span-1 md:col-span-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal flex items-center md:justify-center">
+                        <span class="p-2 bg-sky-50 rounded-full">
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-6 h-6 text-sky-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M17.5 21H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                            <path d="M22 10a3 3 0 0 0-3-3h-2.207a5.502 5.502 0 0 0-10.702.5" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-span-1 row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">#250830</div>
+                    </div>
+                    <div class="col-span-2 row-span-2 md:row-span-1 md:col-span-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">Cloud hosting service payments</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="items-center p-2 grid grid-cols-4 md:grid-cols-6 hover:bg-sky-100 dark:hover:bg-gray-700">
+                    <div class="col-span-1 md:col-span-1 md:col-start-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">09:15 AM</div>
+                    </div>
+                    <div class="col-span-1 row-span-2 row-start-1 md:row-span-1 md:col-span-1 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal flex items-center md:justify-center">
+                        <span class="p-2 bg-emerald-50 rounded-full">
+                          <svg
+                            aria-hidden="true"
+                            class="flex-shrink-0 w-6 h-6 text-emerald-600 transition duration-75 dark:text-gray-400 group-hover:text-sky-600 dark:group-hover:text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M15.686 15A14.5 14.5 0 0 1 12 22a14.5 14.5 0 0 1 0-20 10 10 0 1 0 9.542 13" />
+                            <path d="M2 12h8.5" />
+                            <path d="M20 6V4a2 2 0 1 0-4 0v2" />
+                            <rect width="8" height="5" x="14" y="6" rx="1" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-span-1 row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">#250830</div>
+                    </div>
+                    <div class="col-span-2 row-span-2 md:row-span-1 md:col-span-3 text-gray-600 dark:text-gray-400">
+                      <div class="text-sm font-normal">Domain service payments</div>
                     </div>
                   </a>
                 </li>
               </ol>
             </div>
           </div>
-        </div>
-
-        <!-- Data Table -->
-        <div class="bg-white rounded-2xl shadow-sm">
-          <div class="px-6 py-4 border-b border-gray-200">
-            <h3 class="text-lg font-medium text-gray-900">Recent Users</h3>
-            <p class="mt-1 text-sm text-gray-600">Manage and view user accounts</p>
-          </div>
-
-          <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-200">
+          <!-- Data Table -->
+          <div class="lg:col-span-2 bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6">
+            <div>
+              <h3 class="text-lg font-medium text-gray-900">Recent Users</h3>
+              <p class="mt-1 mb-4 text-sm text-gray-600">Manage and view user accounts</p>
+            </div>
+            <table class="min-w-full divide-y divide-gray-200" id="default-table">
               <thead class="bg-gray-50">
                 <tr>
                   <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User</th>
@@ -441,6 +708,206 @@
                 </tr>
               </thead>
               <tbody class="bg-white divide-y divide-gray-200">
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JD</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">John Doe</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">john@example.com</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">Premium</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  </td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2024-01-15</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JS</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">Jane Smith</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">jane@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-02-20</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">MB</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">Mike Brown</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">mike@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Enterprise</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-10</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">SW</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">Sarah Wilson</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">sarah@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Suspended</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-25</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DL</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">David Lee</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">david@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-05</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JD</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">John Doe</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">john@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-15</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JS</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">Jane Smith</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">jane@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-02-20</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">MB</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">Mike Brown</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">mike@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Enterprise</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-10</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">SW</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">Sarah Wilson</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">sarah@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Suspended</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-25</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DL</div>
+                      <div class="ml-4">
+                        <div class="text-sm font-medium text-gray-900">David Lee</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">david@example.com</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-05</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
+                    <button class="text-red-600 hover:text-red-900">Delete</button>
+                  </td>
+                </tr>
                 <tr class="hover:bg-gray-50">
                   <td class="px-6 py-4 whitespace-nowrap">
                     <div class="flex items-center">
@@ -544,25 +1011,61 @@
               </tbody>
             </table>
           </div>
-
-          <!-- Pagination -->
-          <div class="bg-white px-4 py-3 flex items-center justify-between border-t rounded-2xl border-gray-200 sm:px-6">
-            <div class="flex-1 flex justify-between sm:hidden">
-              <button class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-2xl text-gray-700 bg-white hover:bg-gray-50">Previous</button>
-              <button class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-2xl text-gray-700 bg-white hover:bg-gray-50">Next</button>
-            </div>
-            <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
-              <div>
-                <p class="text-sm text-gray-700">Showing <span class="font-medium">1</span> to <span class="font-medium">5</span> of <span class="font-medium">97</span> results</p>
+          <!-- Billing Chart -->
+          <div class="lg:col-span-1 bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6">
+            <div class="flex justify-between mb-4">
+              <div class="flex shrink flex-col ">
+                <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white pe-1">Billing traffic</h5>
+                 <p class="mt-1 text-sm text-gray-600">Manage and view billing traffic</p>
               </div>
-              <div>
-                <nav class="relative z-0 inline-flex rounded-2xl shadow-sm -space-x-px">
-                  <button class="relative inline-flex items-center px-2 py-2 rounded-l-2xl border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">Previous</button>
-                  <button class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</button>
-                  <button class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-primary text-sm font-medium text-white">2</button>
-                  <button class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">3</button>
-                  <button class="relative inline-flex items-center px-2 py-2 rounded-r-2xl border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">Next</button>
-                </nav>
+            </div>
+
+            <!-- Donut Chart -->
+            <div class="py-6" id="donut-chart"></div>
+
+            <div class="grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between">
+              <div class="flex justify-between items-center pt-5">
+                <!-- Button -->
+                <button
+                  id="dropdownDefaultButtonDonut"
+                  data-dropdown-toggle="lastDaysdropdown"
+                  data-dropdown-placement="bottom"
+                  class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 text-center inline-flex items-center dark:hover:text-white"
+                  type="button"
+                >
+                  Last 7 days
+                  <svg class="w-2.5 m-2.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                  </svg>
+                </button>
+                <div id="lastDaysdropdownDonut" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yesterday</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Today</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 7 days</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 30 days</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Last 90 days</a>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="#"
+                  class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 dark:hover:text-blue-500 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2"
+                >
+                  Billing All
+                  <svg class="w-2.5 h-2.5 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -572,7 +1075,7 @@
       <!-- Footer -->
       <footer class="bg-white border-t rounded-2xl border-gray-200 py-4">
         <div class="px-6">
-          <p class="text-center text-sm text-gray-500">©2025 HostingTong. All rights reserved. | Developed by achmdzkry</p>
+          <p class="text-center text-sm text-gray-500">©2025 <b>CloudPedia</b> All rights reserved.</p>
         </div>
       </footer>
     </div>

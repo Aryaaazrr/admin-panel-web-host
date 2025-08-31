@@ -3,9 +3,145 @@
 
 @theme {
   --color-primary: oklch(58.8% 0.158 241.966);
-  --color-secondary: oklch(74.6% 0.16 232.661);
+  --color-secondary: oklch(92.4% 0.12 95.746);
+  --color-foreground: oklch(92.8% 0.006 264.531);
 }
 
 body {
   font-family: Poppins, sans-serif;
+}
+
+.datatable-input {
+  border: 2px solid var(--color-foreground) !important;
+  border-radius: 10px !important;
+  transition: border-color 0.3s ease;
+}
+
+.datatable-input:focus {
+  border: 2px solid var(--color-primary) !important;
+  outline: none !important;
+}
+
+.datatable-top {
+  padding-left: 0 !important;
+  margin-bottom: 10px;
+}
+
+.datatable-container {
+  height: 280px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+table > :not([hidden]) ~ :not([hidden]) {
+  border-top-width: 1px;
+  border-color: oklch(92.8% 0.006 264.531);
+}
+
+table thead {
+  background-color: oklch(98.5% 0.002 247.839);
+}
+
+table tbody {
+  background-color: white;
+}
+
+table tbody > tr + tr {
+  border-top: 1px solid oklch(92.8% 0.006 264.531);
+}
+
+.datatable-bottom {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 12px 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: oklch(37.3% 0.034 259.733); 
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.datatable-info {
+  color: oklch(44.6% 0.03 256.802); 
+}
+
+.datatable-pagination {
+  display: flex;
+}
+
+.datatable-pagination-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+  flex-wrap: wrap; 
+}
+
+.datatable-pagination-list-item {
+  display: inline-flex;
+}
+
+.datatable-pagination-list-item-link {
+  padding: 6px 12px;
+  border: 1px solid oklch(87.2% 0.01 258.338); 
+  border-radius: 4px;
+  background-color: #fff;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.datatable-pagination-list-item-link:hover {
+  background-color: oklch(96.7% 0.003 264.542);
+}
+
+.datatable-pagination-list-item.datatable-active .datatable-pagination-list-item-link {
+  background-color: var(--color-primary); 
+  color: #fff;
+  border-color: var(--color-primary);
+}
+
+.datatable-pagination-list-item.datatable-disabled .datatable-pagination-list-item-link {
+  background-color: oklch(98.5% 0.002 247.839); 
+  color: oklch(70.7% 0.022 261.325);
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .datatable-bottom {
+    flex-direction: row; 
+    justify-content: space-between;
+    position: relative;
+    left: 10%;
+    gap: 12px;
+  }
+
+  .datatable-pagination-list-item-link {
+    padding: 6px 10px; 
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .datatable-info {
+    font-size: 12px;
+  }
+
+  .datatable-pagination-list-item-link {
+    padding: 4px 8px; 
+    font-size: 12px;
+  }
+
+  .datatable-pagination-list-item:not(.datatable-active):not(:first-child):not(:last-child) {
+    display: none;
+  }
 }
