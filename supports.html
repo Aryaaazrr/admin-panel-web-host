@@ -252,324 +252,116 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 max-h-fit gap-6">
           <!-- Data Table -->
           <div class="lg:col-span-3 bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6">
-            <div>
-              <h3 class="text-lg font-medium text-gray-900">Supports Data</h3>
-              <p class="mt-1 mb-4 text-sm text-gray-600">Manage and view supports data</p>
+            <div class="gap-4 sm:flex sm:items-center sm:justify-between">
+              <div>
+                <h3 class="text-lg font-medium text-gray-900">Supports Data</h3>
+                <p class="mt-1 mb-4 text-sm text-gray-600">Manage and view questions data</p>
+              </div>
+
+              <form class="mt-6 space-y-4 sm:mt-0 sm:flex sm:items-center sm:justify-end sm:space-y-0">
+                <label for="simple-search" class="sr-only">Search</label>
+                <div class="relative w-full flex-1 lg:max-w-sm">
+                  <div class="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3">
+                    <svg class="h-4 w-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                    </svg>
+                  </div>
+                  <input
+                    type="text"
+                    id="simple-search"
+                    class="block w-full rounded-lg border border-gray-300 px-4 py-2.5 ps-9 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                    placeholder="Search Questions & Answers"
+                    required
+                  />
+                </div>
+              </form>
             </div>
-            <table class="min-w-full divide-y divide-gray-200" id="default-table">
-              <thead class="bg-gray-50">
-                <tr>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Plan</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Join Date</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
-                </tr>
-              </thead>
-              <tbody class="bg-white divide-y divide-gray-200">
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-8 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JD</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">John Doe</div>
-                      </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-200 dark:divide-gray-800">
+                <div class="space-y-4 py-6 md:py-8">
+                  <div class="grid gap-4">
+                    <div>
+                      <span class="inline-block rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300 md:mb-0"> 3 answers </span>
                     </div>
-                  </td>
-                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">john@example.com</td>
-                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-8 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2024-01-15</td>
-                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JS</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Jane Smith</div>
-                      </div>
+                    <a href="#" class="text-xl font-semibold text-gray-900 hover:underline dark:text-white"> “Does your cloud hosting service include automatic daily backups?” </a>
+                  </div>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Yes, our cloud hosting plans come with automatic daily backups that are securely stored and can be restored anytime from your control panel.</p>
+                  <p class="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    Answered 1 day ago by
+                    <a href="#" class="text-gray-900 hover:underline dark:text-white">Alex Carter</a>
+                  </p>
+                </div>
+
+                <div class="space-y-4 py-6 md:py-8">
+                  <div class="grid gap-4">
+                    <div>
+                      <span class="inline-block rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300 md:mb-0"> 1 answer </span>
                     </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">jane@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-02-20</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">MB</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Mike Brown</div>
-                      </div>
+                    <a href="#" class="text-xl font-semibold text-gray-900 hover:underline dark:text-white"> “Is VPS hosting better than shared hosting for e-commerce websites?” </a>
+                  </div>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                    Definitely. VPS hosting provides dedicated resources and stronger security compared to shared hosting, making it a better option for e-commerce platforms that need stability and reliability.
+                  </p>
+                  <p class="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    Answered 2 days ago by
+                    <a href="#" class="text-gray-900 hover:underline dark:text-white">Sarah Johnson</a>
+                  </p>
+                </div>
+
+                <div class="space-y-4 py-6 md:py-8">
+                  <div class="grid gap-4">
+                    <div>
+                      <span class="inline-block rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300 md:mb-0"> 5 answers </span>
                     </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">mike@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Enterprise</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-10</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">SW</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Sarah Wilson</div>
-                      </div>
+                    <a href="#" class="text-xl font-semibold text-gray-900 hover:underline dark:text-white"> “Can I transfer my existing domain to your hosting service?” </a>
+                  </div>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Yes, you can transfer your domain easily. Our support team will guide you through the process and ensure minimal downtime.</p>
+                  <p class="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    Answered 3 days ago by
+                    <a href="#" class="text-gray-900 hover:underline dark:text-white">Michael Lee</a>
+                  </p>
+                </div>
+
+                <div class="space-y-4 py-6 md:py-8">
+                  <div class="grid gap-4">
+                    <div>
+                      <span class="inline-block rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300 md:mb-0"> 4 answers </span>
                     </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">sarah@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Suspended</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-25</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DL</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">David Lee</div>
-                      </div>
+                    <a href="#" class="text-xl font-semibold text-gray-900 hover:underline dark:text-white"> “Do you offer free SSL certificates with domain registration?” </a>
+                  </div>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">Yes, all our domain registration and hosting plans include free SSL certificates to keep your website secure and build customer trust.</p>
+                  <p class="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    Answered 4 days ago by
+                    <a href="#" class="text-gray-900 hover:underline dark:text-white">Emma Brown</a>
+                  </p>
+                </div>
+
+                <div class="space-y-4 py-6 md:py-8">
+                  <div class="grid gap-4">
+                    <div>
+                      <span class="inline-block rounded bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:bg-green-900 dark:text-green-300 md:mb-0"> 2 answers </span>
                     </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">david@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-05</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JD</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">John Doe</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">john@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-15</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JS</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Jane Smith</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">jane@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-02-20</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">MB</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Mike Brown</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">mike@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Enterprise</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-10</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">SW</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Sarah Wilson</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">sarah@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Suspended</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-25</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DL</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">David Lee</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">david@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-05</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JD</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">John Doe</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">john@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-15</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JS</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Jane Smith</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">jane@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-02-20</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">MB</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Mike Brown</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">mike@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Enterprise</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-10</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">SW</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Sarah Wilson</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">sarah@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Suspended</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-25</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DL</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">David Lee</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">david@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-05</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                    <a href="#" class="text-xl font-semibold text-gray-900 hover:underline dark:text-white"> “What’s the difference between managed VPS hosting and unmanaged VPS hosting?” </a>
+                  </div>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                    Managed VPS hosting means our team handles updates, security, and server monitoring. Unmanaged VPS gives you full control, but you’re responsible for configuration and maintenance.
+                  </p>
+                  <p class="text-sm font-medium text-gray-500 dark:text-gray-400">
+                    Answered 1 week ago by
+                    <a href="#" class="text-gray-900 hover:underline dark:text-white">Daniel Smith</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-center lg:justify-start">
+              <button
+                type="button"
+                class="w-full rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700 sm:w-auto"
+              >
+                View more questions
+              </button>
+            </div>
           </div>
         </div>
       </main>
