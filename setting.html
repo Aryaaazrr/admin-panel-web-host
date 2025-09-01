@@ -265,65 +265,89 @@
 
       <!-- Content -->
       <main class="py-6">
-        <div class="grid grid-cols-1 lg:grid-cols-3 max-h-fit gap-6">
-          <div class="lg:col-span-3 bg-white rounded-lg shadow-sm dark:bg-gray-800 p-4 md:p-6">
-            <h2 class="mb-4 text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl md:mb-6">Setting overview</h2>
-            <div class="py-4 md:py-8">
-              <div class="mb-4 grid gap-4 sm:grid-cols-2 sm:gap-8 lg:gap-16">
-                <div class="space-y-4">
-                  <div class="flex space-x-4">
-                    <img class="h-16 w-30 rounded-lg" src="./src/img/logo_cloudpedia.png" alt="Logo CloudPedia" />
-                    <div>
-                      <span class="mb-2 inline-block rounded bg-primary-100 py-0.5 text-xs font-medium text-primary-800 dark:bg-primary-900 dark:text-primary-300"> Account </span>
-                      <h2 class="flex items-center text-xl font-bold leading-none text-gray-900 dark:text-white sm:text-2xl">CloudPedia</h2>
-                    </div>
-                  </div>
-                  <dl class="">
-                    <dt class="font-semibold text-gray-900 dark:text-white">Email Address</dt>
-                    <dd class="text-gray-500 dark:text-gray-400">admin@cloudpedia.id</dd>
-                  </dl>
-                  <dl>
-                    <dt class="font-semibold text-gray-900 dark:text-white">Company Central Address</dt>
-                    <dd class="flex items-center gap-1 text-gray-500 dark:text-gray-400">
-                      <svg class="hidden h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500 lg:inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5" />
-                      </svg>
-                      Soho Vittorio Citraland, Unit 708 Lt.7 Jl. Raya Menganti Karangan No. 32, RT.000 RW.000, Babatan, Wiyung, Kota Surabaya, Jawa Timur
-                    </dd>
-                  </dl>
-                </div>
-                <div class="space-y-4">
-                  <dl>
-                    <dt class="font-semibold text-gray-900 dark:text-white">Company Branch Address</dt>
-                    <dd class="text-gray-500 dark:text-gray-400">
-                      <svg class="hidden h-5 w-5 shrink-0 text-gray-400 dark:text-gray-500 lg:inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5" />
-                      </svg>
-                      Ruko Este Square, Blok A12 No.56-58 Jl. Dr. Ir. H. Soekarno, Mulyorejo, Kec. Mulyorejo, Surabaya, Jawa Timur 60115
-                    </dd>
-                  </dl>
-                  <dl>
-                    <dt class="font-semibold text-gray-900 dark:text-white">Phone Number</dt>
-                    <dd class="text-gray-500 dark:text-gray-400">+62 822-2803-7221</dd>
-                  </dl>
-                </div>
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <!-- Profile Perusahaan -->
+          <div class="col-span-1 lg:col-span-2 bg-white rounded-2xl shadow-md dark:bg-gray-800 p-6 space-y-6">
+            <div class="flex items-center gap-4">
+              <img class="h-16 w-16 rounded-lg object-contain ring-1 ring-gray-200 dark:ring-gray-700" src="./src/img/logo_cloudpedia.png" alt="Logo CloudPedia" />
+              <div>
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white">CloudPedia</h2>
+                <span class="text-sm text-gray-500 dark:text-gray-400">Hosting Provider</span>
               </div>
-              <button
-                type="button"
-                class="inline-flex w-full items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:w-auto cursor-pointer"
-              >
-                <svg class="-ms-0.5 me-1.5 h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m14.304 4.844 2.852 2.852M7 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-4.5m2.409-9.91a2.017 2.017 0 0 1 0 2.853l-6.844 6.844L8 14l.713-3.565 6.844-6.844a2.015 2.015 0 0 1 2.852 0Z"
-                  ></path>
-                </svg>
-                Edit personal account
-              </button>
             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <dl>
+                <dt class="font-semibold text-gray-900 dark:text-white">Email</dt>
+                <dd class="text-gray-500 dark:text-gray-400">admin@cloudpedia.id</dd>
+              </dl>
+              <dl>
+                <dt class="font-semibold text-gray-900 dark:text-white">Phone</dt>
+                <dd class="text-gray-500 dark:text-gray-400">+62 822-2803-7221</dd>
+              </dl>
+              <dl class="sm:col-span-2">
+                <dt class="font-semibold text-gray-900 dark:text-white">Alamat Pusat</dt>
+                <dd class="text-gray-500 dark:text-gray-400">Soho Vittorio Citraland, Unit 708 Lt.7, Surabaya</dd>
+              </dl>
+              <dl class="sm:col-span-2">
+                <dt class="font-semibold text-gray-900 dark:text-white">Alamat Cabang</dt>
+                <dd class="text-gray-500 dark:text-gray-400">Ruko Este Square, Blok A12 No.56-58, Surabaya</dd>
+              </dl>
+            </div>
+            <button class="mt-4 inline-flex items-center px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-primary-700">Edit Profile</button>
+          </div>
+
+          <!-- Keamanan Akun -->
+          <div class="col-span-1 bg-white rounded-2xl shadow-md dark:bg-gray-800 p-6 space-y-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Keamanan Akun</h3>
+            <ul class="space-y-3">
+              <li><button class="text-primary hover:underline">Ganti Password</button></li>
+              <li><button class="text-primary hover:underline">Aktifkan 2FA</button></li>
+              <li><button class="text-primary hover:underline">Kelola Device Login</button></li>
+            </ul>
+          </div>
+
+          <!-- Notifikasi & Preferensi -->
+          <div class="col-span-1 bg-white rounded-2xl shadow-md dark:bg-gray-800 p-6 space-y-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Notifikasi & Preferensi</h3>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" class="rounded" checked />
+              <span>Email Billing Reminder</span>
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" class="rounded" />
+              <span>WhatsApp Support Notification</span>
+            </label>
+          </div>
+
+          <!-- Informasi Operasional -->
+          <div class="col-span-1 lg:col-span-2 bg-white rounded-2xl shadow-md dark:bg-gray-800 p-6 space-y-4">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Informasi Operasional</h3>
+            <dl class="grid grid-cols-2 gap-4">
+              <div>
+                <dt class="font-medium text-gray-900 dark:text-white">Status Operasional</dt>
+                <dd class="text-gray-500 dark:text-gray-400">Aktif</dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-900 dark:text-white">Legalitas Usaha</dt>
+                <dd class="text-gray-500 dark:text-gray-400">NIB: 1234567890123</dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-900 dark:text-white">Server Aktif</dt>
+                <dd class="text-gray-500 dark:text-gray-400">12 Server (Data Center Jakarta & Singapore)</dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-900 dark:text-white">Keamanan</dt>
+                <dd class="text-gray-500 dark:text-gray-400">ISO 27001 Certified</dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-900 dark:text-white">Support Aktif</dt>
+                <dd class="text-gray-500 dark:text-gray-400">24/7 Live Chat & Ticket</dd>
+              </div>
+              <div>
+                <dt class="font-medium text-gray-900 dark:text-white">Sertifikat SSL</dt>
+                <dd class="text-gray-500 dark:text-gray-400">Wildcard - cloudpedia.id</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </main>

@@ -275,11 +275,12 @@
             <table class="min-w-full divide-y divide-gray-200" id="default-table">
               <thead class="bg-gray-50">
                 <tr>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Plan</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email User</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Invoice Code</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Invoice Date</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Due Date</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total</th>
                   <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Join Date</th>
                   <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
                 </tr>
               </thead>
@@ -289,297 +290,260 @@
                     <div class="flex items-center">
                       <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JD</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">John Doe</div>
+                        <div class="text-sm font-medium text-gray-900">john@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">john@example.com</td>
-                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-8 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#250825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2023-01-15</td>
                   <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2024-01-15</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 630.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Paid</span>
+                  </td>
                   <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
                       <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JS</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Jane Smith</div>
+                        <div class="text-sm font-medium text-gray-900">jane@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">jane@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#260825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-02-20</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-02-20</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 420.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Paid</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-02-20</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
                       <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">MB</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Mike Brown</div>
+                        <div class="text-sm font-medium text-gray-900">mike@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">mike@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Enterprise</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#270825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-03-10</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-03-10</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 1.200.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800">Cancelled</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-10</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">SW</div>
+                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">AL</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Sarah Wilson</div>
+                        <div class="text-sm font-medium text-gray-900">alice@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">sarah@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Suspended</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#280825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-04-12</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-04-12</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 950.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Unpaid</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-25</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DL</div>
+                      <div class="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center text-white text-sm font-medium">RB</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">David Lee</div>
+                        <div class="text-sm font-medium text-gray-900">robert@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">david@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#290825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-05-05</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-05-05</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 780.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Paid</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-05</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JD</div>
+                      <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center text-white text-sm font-medium">CL</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">John Doe</div>
+                        <div class="text-sm font-medium text-gray-900">clara@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">john@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#300825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-06-14</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-06-14</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 500.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800">Cancelled</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-15</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JS</div>
+                      <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DN</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Jane Smith</div>
+                        <div class="text-sm font-medium text-gray-900">diana@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">jane@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#310825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-07-08</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-07-08</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 1.100.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Paid</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-02-20</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">MB</div>
+                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">EO</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Mike Brown</div>
+                        <div class="text-sm font-medium text-gray-900">edward@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">mike@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Enterprise</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#320825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-08-18</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-08-18</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 890.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Unpaid</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-10</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">SW</div>
+                      <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-sm font-medium">FR</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Sarah Wilson</div>
+                        <div class="text-sm font-medium text-gray-900">frank@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">sarah@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Suspended</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#330825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-09-02</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-09-02</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 720.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Paid</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-25</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DL</div>
+                      <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center text-white text-sm font-medium">GM</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">David Lee</div>
+                        <div class="text-sm font-medium text-gray-900">george@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">david@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#340825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-10-21</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-10-21</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 650.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800">Cancelled</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-05</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JD</div>
+                      <div class="w-8 h-8 bg-lime-500 rounded-full flex items-center justify-center text-white text-sm font-medium">HS</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">John Doe</div>
+                        <div class="text-sm font-medium text-gray-900">hannah@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">john@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#350825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-11-03</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-11-03</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 1.350.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Paid</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-15</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
                 </tr>
+
                 <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
+                  <td class="px-6 py-8 whitespace-nowrap">
                     <div class="flex items-center">
-                      <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm font-medium">JS</div>
+                      <div class="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center text-white text-sm font-medium">IS</div>
                       <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Jane Smith</div>
+                        <div class="text-sm font-medium text-gray-900">isaac@example.com</div>
                       </div>
                     </div>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">jane@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">#360825</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-900">2024-12-25</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">2025-12-25</td>
+                  <td class="px-6 py-8 whitespace-nowrap text-sm text-gray-500">Rp 1.000.000</td>
+                  <td class="px-6 py-8 whitespace-nowrap">
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Unpaid</span>
                   </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-02-20</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm font-medium">MB</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Mike Brown</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">mike@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Enterprise</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-10</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm font-medium">SW</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">Sarah Wilson</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">sarah@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Premium</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">Suspended</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-01-25</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                    <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
-                    <button class="text-red-600 hover:text-red-900">Delete</button>
-                  </td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <div class="flex items-center">
-                      <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">DL</div>
-                      <div class="ml-4">
-                        <div class="text-sm font-medium text-gray-900">David Lee</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">david@example.com</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Basic</td>
-                  <td class="px-6 py-4 whitespace-nowrap">
-                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Active</span>
-                  </td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2024-03-05</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <td class="px-6 py-8 whitespace-nowrap text-sm font-medium">
                     <button class="text-indigo-600 hover:text-indigo-900 mr-3">Edit</button>
                     <button class="text-red-600 hover:text-red-900">Delete</button>
                   </td>
