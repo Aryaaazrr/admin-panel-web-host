@@ -33,6 +33,7 @@ themeToggleBtn.addEventListener("click", function () {
   }
 });
 
+// chart
 const options = {
   chart: {
     height: "270px",
@@ -228,10 +229,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// datatable
+if (document.getElementById("main-table") && typeof simpleDatatables.DataTable !== "undefined") {
+  const dataTable = new simpleDatatables.DataTable("#main-table", {
+    searchable: true,
+    perPage: 5,
+    perPageSelect: false,
+    fixedHeight: true,
+  });
+}
+
 if (document.getElementById("default-table") && typeof simpleDatatables.DataTable !== "undefined") {
   const dataTable = new simpleDatatables.DataTable("#default-table", {
     searchable: true,
-    perPage: 5,
+    perPage: 10,
     perPageSelect: false,
     fixedHeight: true,
   });

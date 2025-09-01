@@ -28,7 +28,7 @@ body {
 }
 
 .datatable-container {
-  height: 280px;
+  /* height: 280px; */
   overflow-y: hidden;
   overflow-x: scroll;
 }
@@ -49,6 +49,11 @@ table thead {
 
 table tbody {
   background-color: white;
+}
+
+.datatable-table > tbody > tr > td {
+  vertical-align: middle !important;
+  padding: 16px 24px !important;
 }
 
 table tbody > tr + tr {
